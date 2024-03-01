@@ -4,7 +4,7 @@ const Landing = () => {
   return (
     <>
       <div
-        className="w-full h-screen bg-cover bg-center bg-no-repeat bg-fixed relative overflow-hidden"
+        className=" box-border flex flex-col w-screen h-screen bg-cover bg-center bg-no-repeat bg-fixed relative overflow-hidden"
         style={{
           backgroundImage: `url(${bgImg})`,
         }}
@@ -12,7 +12,7 @@ const Landing = () => {
         <Navbar />
         <div
           div
-          className="w-full h-full flex flex-row justify-center items-center"
+          className="w-full h-full flex flex-row justify-center items-center box-border"
         >
           <div className=" w-full h-2/5 bg-transparent backdrop-blur-sm flex flex-col rounded p-4 items-center justify-around">
             <h2 className=" font-sans font-semibold text-white text-4xl">
@@ -21,10 +21,13 @@ const Landing = () => {
             <h1 className=" text-white boold text-4xl self-end">
               - Ben Sweetland
             </h1>
+            <button className=" bg-purple-400 px-3 py-2 rounded-full">
+              get another quote
+            </button>
           </div>
         </div>
-        <div>
-          <button className="absolute bottom-1 self-center bg-purple-400 px-3 py-2">
+        <div className=" flex flex-row justify-center w-full mb-20">
+          <button className=" bg-purple-400 px-3 py-2 rounded-full">
             Read more
           </button>
         </div>
