@@ -1,10 +1,14 @@
 import "./App.css";
 import Landing from "./pages/landing";
+import Quotes from "./pages/quotesPage";
 
 function App() {
   return (
     <>
-      <Landing />
+      <div className=" w-screen h-screen">
+        <Landing />
+        <Quotes />
+      </div>
     </>
   );
 }
