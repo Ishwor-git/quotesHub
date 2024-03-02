@@ -30,7 +30,7 @@ const Quote = ({ quote, author, catag = "unknown" }) => {
         <div className=" h-full w-2/3 flex flex-col justify-center items-center bg-gradient-to-r from-purple-100 to-purple-600 rounded-r-xl">
           <h2 className="text-white font-bold text-2xl p-4">{quote}</h2>
           <h1 className="text-white font-bold text-2xl p-4">- {author}</h1>
-          <button className=" text-purple-600 py-1 px-4 border border-purple-600 rounded-full bg-white hover:bg-purple-600 hover:text-white transition-all duration-300">
+          <button className=" mt-4 text-purple-600 py-2 px-8 border border-purple-600 rounded-xl bg-white hover:bg-purple-600 hover:text-white transition-all duration-300">
             get another quote
           </button>
         </div>
