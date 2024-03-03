@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import bgImg from "../assets/mainBg.jpg";
 import Navbar from "../components/navbar";
+import { Link, animateScroll as scroll } from "react-scroll";
 const Landing = () => {
   const [quote, setQuote] = useState({ quote: "", author: "" });
 
@@ -55,9 +56,14 @@ const Landing = () => {
             >
               Get another quote
             </button>
-            <button className="lg:text-white lg:bg-purple-600 lg:hover:bg-purple-900 max-md:mt-40 lg:rounded-xl lg:px-6 lg:py-2 lg:my-4 text-purple-600 py-1 px-4 border border-purple-600 rounded-full bg-white hover:bg-purple-600 hover:text-white transition-all duration-300">
+            <Link
+              className=" cursor-pointer lg:text-white lg:bg-purple-600 lg:hover:bg-purple-900 max-md:mt-40 lg:rounded-xl lg:px-6 lg:py-2 lg:my-4 text-purple-600 py-1 px-4 border border-purple-600 rounded-full bg-white hover:bg-purple-600 hover:text-white transition-all duration-300"
+              to="quotesDisplay"
+              smooth={true}
+              duration={500}
+            >
               Read more
-            </button>
+            </Link>
           </div>
         </div>
       </div>

@@ -8,13 +8,10 @@ const Quote = ({
     console.log("action not defined for this component");
   },
 }) => {
-  // const bgImg = require(`./../assets/${catag}.jpg`);
   console.log(catag);
   const bgImg = require(`./../assets/${catag}.jpg`);
 
   const test = catag.slice();
-  // console.log(theme[catag]);
-  // const test = "education";
 
   return (
     <>
@@ -41,7 +38,7 @@ const Quote = ({
           </div>
         </div>
       </div>
-      <div className=" max-md:hidden w-8/12 h-96  flex flex-row justify-center items-center my-8">
+      <div className=" max-md:hidden w-8/12 h-80  flex flex-row justify-center items-center my-8">
         <div
           className=" h-full w-2/5 bg-cover bg-center bg-no-repeat rounded-l-3xl"
           style={{

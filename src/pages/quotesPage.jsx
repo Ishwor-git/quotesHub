@@ -40,6 +40,11 @@ const Quotes = () => {
     const response = await axios.get(
       `https://api.quotable.io/random?tags=${catag}`
     );
+
+    if (response.length > 110) {
+      fetchQuote(catag);
+    }
+
     setQuote((prevQuotes) => ({
       ...prevQuotes,
       [catag]: {
@@ -50,7 +55,10 @@ const Quotes = () => {
   };
 
   return (
-    <div className=" mt-8 w-full h-full p-4 box-border flex flex-col items-center overflow-x-hidden overflow-y-scroll">
+    <div
+      className=" mt-8 w-full h-full p-4 box-border flex flex-col items-center overflow-x-hidden overflow-y-scroll"
+      id="quotesDisplay"
+    >
       <Quote
         quote={quote.Success.quote}
         author={quote.Success.author}
