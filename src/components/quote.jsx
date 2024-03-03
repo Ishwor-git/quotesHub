@@ -30,14 +30,14 @@ const Quote = ({
           </div>
         </div>
       </div>
-      <div className=" max-md:hidden w-3/5 h-80  flex flex-row justify-center items-center my-8">
+      <div className=" max-md:hidden w-8/12 h-80  flex flex-row justify-center items-center my-8">
         <div
-          className=" h-full w-1/3 bg-cover bg-center bg-no-repeat rounded-l-xl"
+          className=" h-full w-2/5 bg-cover bg-center bg-no-repeat rounded-l-3xl"
           style={{
             backgroundImage: `url(${bgImg})`,
           }}
         ></div>
-        <div className=" h-full w-2/3 flex flex-col justify-center items-center bg-gradient-to-r from-purple-100 to-purple-600 rounded-r-xl">
+        <div className=" h-full w-3/5 flex flex-col justify-center items-center bg-gradient-to-r from-purple-100 to-purple-600 rounded-r-3xl">
           <h2 className="text-white font-semibold text-2xl p-4">{quote}</h2>
           <h1 className="text-white font-semibold text-xl p-4">- {author}</h1>
           <button

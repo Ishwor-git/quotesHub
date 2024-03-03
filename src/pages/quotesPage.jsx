@@ -7,19 +7,29 @@ const Quotes = () => {
   const [quote, setQuote] = useState({
     Success: { quote: "", author: "" },
     Business: { quote: "", author: "" },
+    Competition: { quote: "", author: "" },
     Life: { quote: "", author: "" },
     Humorous: { quote: "", author: "" },
     Love: { quote: "", author: "" },
     Technology: { quote: "", author: "" },
+    Politics: { quote: "", author: "" },
+    Creativity: { quote: "", author: "" },
+    Sports: { quote: "", author: "" },
+    History: { quote: "", author: "" },
   });
 
   useEffect(() => {
     fetchQuote("Success");
     fetchQuote("Business");
+    fetchQuote("Competition");
     fetchQuote("Life");
     fetchQuote("Humorous");
     fetchQuote("Love");
     fetchQuote("Technology");
+    fetchQuote("Politics");
+    fetchQuote("Creativity");
+    fetchQuote("Sports");
+    fetchQuote("History");
   }, []);
 
   const handleGetQuote = (catag) => {
@@ -56,6 +66,13 @@ const Quotes = () => {
       />
 
       <Quote
+        quote={quote.Competition.quote}
+        author={quote.Competition.author}
+        handleClick={() => handleGetQuote("Competition")}
+        catag="Competition"
+      />
+
+      <Quote
         quote={quote.Life.quote}
         author={quote.Life.author}
         handleClick={() => handleGetQuote("Life")}
@@ -81,6 +98,34 @@ const Quotes = () => {
         author={quote.Technology.author}
         handleClick={() => handleGetQuote("Technology")}
         catag="Technology"
+      />
+
+      <Quote
+        quote={quote.Politics.quote}
+        author={quote.Politics.author}
+        handleClick={() => handleGetQuote("Politics")}
+        catag="Politics"
+      />
+
+      <Quote
+        quote={quote.Creativity.quote}
+        author={quote.Creativity.author}
+        handleClick={() => handleGetQuote("Creativity")}
+        catag="Creativity"
+      />
+
+      <Quote
+        quote={quote.Sports.quote}
+        author={quote.Sports.author}
+        handleClick={() => handleGetQuote("Sports")}
+        catag="Sports"
+      />
+
+      <Quote
+        quote={quote.History.quote}
+        author={quote.History.author}
+        handleClick={() => handleGetQuote("History")}
+        catag="History"
       />
     </div>
   );
