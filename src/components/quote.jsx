@@ -1,20 +1,30 @@
 import bgImg from "../assets/motivation1.jpg";
-const Quote = ({ quote, author, catag = "unknown" }) => {
+const Quote = ({
+  quote,
+  author,
+  catag = "unknown",
+  handleClick = () => {
+    console.log("action not defined for this component");
+  },
+}) => {
   return (
     <>
       <div
-        className="md:hidden box-border h-56 w-full bg-cover bg-center bg-no-repeat overflow-hidden my-4 mx-2 rounded-xl"
+        className="md:hidden box-border h-72 w-full bg-cover bg-center bg-no-repeat overflow-hidden my-4 mx-2 rounded-xl"
         style={{
           backgroundImage: `url(${bgImg})`,
         }}
       >
         <div className=" w-full h-full flex flex-col justify-between items-center box-border  bg-black bg-opacity-50 rounded-xl">
           <div className="w-full h-full flex flex-col justify-center items-center">
-            <h2 className="text-white font-bold text-2xl p-4">{quote}</h2>
-            <h1 className="text-white font-bold text-2xl p-4">- {author}</h1>
+            <h2 className="text-white font-medium text-xl p-4">{quote}</h2>
+            <h1 className="text-white font-medium text-lg p-4">- {author}</h1>
           </div>
           <div className="flex flex-row justify-center w-full mb-10">
-            <button className=" text-purple-600 py-1 px-4 border border-purple-600 rounded-full bg-white hover:bg-purple-600 hover:text-white transition-all duration-300">
+            <button
+              className=" text-purple-600 py-1 px-4 border border-purple-600 rounded-full bg-white hover:bg-purple-600 hover:text-white transition-all duration-300"
+              onClick={handleClick}
+            >
               get another quote
             </button>
           </div>
@@ -28,9 +38,12 @@ const Quote = ({ quote, author, catag = "unknown" }) => {
           }}
         ></div>
         <div className=" h-full w-2/3 flex flex-col justify-center items-center bg-gradient-to-r from-purple-100 to-purple-600 rounded-r-xl">
-          <h2 className="text-white font-bold text-2xl p-4">{quote}</h2>
-          <h1 className="text-white font-bold text-2xl p-4">- {author}</h1>
-          <button className=" mt-4 text-purple-600 py-2 px-8 border border-purple-600 rounded-xl bg-white hover:bg-purple-600 hover:text-white transition-all duration-300">
+          <h2 className="text-white font-semibold text-2xl p-4">{quote}</h2>
+          <h1 className="text-white font-semibold text-xl p-4">- {author}</h1>
+          <button
+            className=" mt-4 mb-4 text-purple-600 py-2 px-8 border border-purple-600 rounded-xl bg-white hover:bg-purple-600 hover:text-white transition-all duration-300"
+            onClick={handleClick}
+          >
             get another quote
           </button>
         </div>

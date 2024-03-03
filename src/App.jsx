@@ -5,7 +5,7 @@ import Quotes from "./pages/quotesPage";
 function App() {
   return (
     <>
-      <div className=" w-screen h-screen">
+      <div>
         <Landing />
         <Quotes />
       </div>
