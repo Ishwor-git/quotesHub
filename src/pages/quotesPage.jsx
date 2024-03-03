@@ -13,7 +13,7 @@ const Quotes = () => {
     Love: { quote: "", author: "" },
     Technology: { quote: "", author: "" },
     Politics: { quote: "", author: "" },
-    Creativity: { quote: "", author: "" },
+    Education: { quote: "", author: "" },
     Sports: { quote: "", author: "" },
     History: { quote: "", author: "" },
   });
@@ -27,7 +27,7 @@ const Quotes = () => {
     fetchQuote("Love");
     fetchQuote("Technology");
     fetchQuote("Politics");
-    fetchQuote("Creativity");
+    fetchQuote("Education");
     fetchQuote("Sports");
     fetchQuote("History");
   }, []);
@@ -55,77 +55,77 @@ const Quotes = () => {
         quote={quote.Success.quote}
         author={quote.Success.author}
         handleClick={() => handleGetQuote("Success")}
-        catag="Success"
+        catag="success"
       />
 
       <Quote
         quote={quote.Business.quote}
         author={quote.Business.author}
         handleClick={() => handleGetQuote("Business")}
-        catag="Business"
+        catag="business"
       />
 
       <Quote
         quote={quote.Competition.quote}
         author={quote.Competition.author}
         handleClick={() => handleGetQuote("Competition")}
-        catag="Competition"
+        catag="competition"
       />
 
       <Quote
         quote={quote.Life.quote}
         author={quote.Life.author}
         handleClick={() => handleGetQuote("Life")}
-        catag="Life"
+        catag="life"
       />
 
       <Quote
         quote={quote.Humorous.quote}
         author={quote.Humorous.author}
         handleClick={() => handleGetQuote("Humorous")}
-        catag="Humorous"
+        catag="humorous"
       />
 
       <Quote
         quote={quote.Love.quote}
         author={quote.Love.author}
         handleClick={() => handleGetQuote("Love")}
-        catag="Love"
+        catag="love"
       />
 
       <Quote
         quote={quote.Technology.quote}
         author={quote.Technology.author}
         handleClick={() => handleGetQuote("Technology")}
-        catag="Technology"
+        catag="technology"
       />
 
       <Quote
         quote={quote.Politics.quote}
         author={quote.Politics.author}
         handleClick={() => handleGetQuote("Politics")}
-        catag="Politics"
+        catag="politics"
       />
 
       <Quote
-        quote={quote.Creativity.quote}
-        author={quote.Creativity.author}
-        handleClick={() => handleGetQuote("Creativity")}
-        catag="Creativity"
+        quote={quote.Education.quote}
+        author={quote.Education.author}
+        handleClick={() => handleGetQuote("Education")}
+        catag="education"
       />
 
       <Quote
         quote={quote.Sports.quote}
         author={quote.Sports.author}
         handleClick={() => handleGetQuote("Sports")}
-        catag="Sports"
+        catag="sports"
       />
 
       <Quote
         quote={quote.History.quote}
         author={quote.History.author}
         handleClick={() => handleGetQuote("History")}
-        catag="History"
+        catag="history"
       />
     </div>
   );

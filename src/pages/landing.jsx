@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import bgImg from "../assets/3dcubes.jpg";
+import bgImg from "../assets/mainBg.jpg";
 import Navbar from "../components/navbar";
 const Landing = () => {
   const [quote, setQuote] = useState({ quote: "", author: "" });

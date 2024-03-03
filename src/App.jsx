@@ -5,7 +5,7 @@ import Quotes from "./pages/quotesPage";
 function App() {
   return (
     <>
-      <div>
+      <div className=" overflow-x-hidden">
         <Landing />
         <Quotes />
       </div>

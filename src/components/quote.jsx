@@ -1,4 +1,4 @@
-import bgImg from "../assets/motivation1.jpg";
+// import bgImg from "../assets/motivation1.jpg";
 const Quote = ({
   quote,
   author,
@@ -7,10 +7,13 @@ const Quote = ({
     console.log("action not defined for this component");
   },
 }) => {
+  // const bgImg = require(`./../assets/${catag}.jpg`);
+  const bgImg = require(`./../assets/${catag}.jpg`);
+
   return (
     <>
       <div
-        className="md:hidden box-border h-72 w-full bg-cover bg-center bg-no-repeat overflow-hidden my-4 mx-2 rounded-xl"
+        className="md:hidden box-border h-72 w-full bg-cover bg-center bg-no-repeat overflow-x-hidden overflow-y-auto my-4 mx-2 rounded-xl"
         style={{
           backgroundImage: `url(${bgImg})`,
         }}
