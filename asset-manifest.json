@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/quotesHub/static/css/main.f0e49bf7.css",
-    "main.js": "/quotesHub/static/js/main.b0dd4162.js",
+    "main.js": "/quotesHub/static/js/main.87d64edd.js",
     "static/js/453.1dfa324a.chunk.js": "/quotesHub/static/js/453.1dfa324a.chunk.js",
     "static/media/mainBg.jpg": "/quotesHub/static/media/mainBg.238932bc1bcf840867bc.jpg",
     "static/media/humorous.jpg": "/quotesHub/static/media/humorous.afa3873bf5699c9cc5ae.jpg",
@@ -18,11 +18,11 @@
     "static/media/business.jpg": "/quotesHub/static/media/business.2df2feb51c5910bf30f6.jpg",
     "index.html": "/quotesHub/index.html",
     "main.f0e49bf7.css.map": "/quotesHub/static/css/main.f0e49bf7.css.map",
-    "main.b0dd4162.js.map": "/quotesHub/static/js/main.b0dd4162.js.map",
+    "main.87d64edd.js.map": "/quotesHub/static/js/main.87d64edd.js.map",
     "453.1dfa324a.chunk.js.map": "/quotesHub/static/js/453.1dfa324a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f0e49bf7.css",
-    "static/js/main.b0dd4162.js"
+    "static/js/main.87d64edd.js"
   ]
 }
