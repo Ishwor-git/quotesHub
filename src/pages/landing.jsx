@@ -35,7 +35,7 @@ const Landing = () => {
           div
           className="w-full h-full flex flex-col md:flex-row justify-center items-center box-border"
         >
-          <div className=" w-full md:w-1/2 h-2/5 bg-transparent backdrop-blur-sm flex flex-col rounded p-8 items-center justify-around">
+          <div className=" w-full md:w-1/2 h-2/5 bg-transparent backdrop-blur-sm flex flex-col rounded p-8 md:py-10 md:rounded-3xl md:px-16 items-center justify-around">
             <h2 className=" font-sans font-semibold text-white text-3xl md:self-start">
               {quote.quote}
             </h2>
@@ -49,7 +49,7 @@ const Landing = () => {
               get another quote
             </button>
           </div>
-          <div className=" flex flex-col justify-center">
+          <div className=" flex flex-col justify-center lg:mx-8">
             <button
               className=" max-md:hidden lg:rounded-xl lg:px-6 lg:py-2 lg:my-4 text-purple-600 py-1 px-4 border border-purple-600 rounded-full bg-white hover:bg-purple-600 hover:text-white transition-all duration-300"
               onClick={handleGetQuote}
