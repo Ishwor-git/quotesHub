@@ -41,7 +41,7 @@ const Quotes = () => {
       `https://api.quotable.io/random?tags=${catag}`
     );
 
-    if (response.length > 110) {
+    if (response.length > 100) {
       fetchQuote(catag);
     }
 
