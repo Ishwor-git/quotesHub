@@ -1,9 +1,9 @@
 function Navbar() {
   const handleSourceCode = () => {
-    window.open("", "_blank");
+    window.open("https://github.com/Ishwor-git/quotesHub/", "_blank");
   };
   const handleAboutUs = () => {
-    window.open("", "_blank");
+    window.open("https://github.com/Ishwor-git/", "_blank");
   };
   return (
     <nav className="w-full h-12 bg-gray-300 flex justify-between flex-row bg-opacity-10 backdrop-blur">

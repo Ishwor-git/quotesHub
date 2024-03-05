@@ -27,7 +27,7 @@ const theme = {
       from: "from-gray-200",
       to: "to-gray-600",
     },
-    border: "border-yellow-600",
+    border: "border-gray-600",
   },
   life: {
     bg: "bg-amber-600",
